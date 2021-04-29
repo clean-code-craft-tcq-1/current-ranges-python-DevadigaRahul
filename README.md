@@ -52,5 +52,26 @@ Adapt/adopt/extend the `yml` files from one of your workflow folders.
 
 Implement one failing test and at least one passing test:
 
-- _enter the name of a **passing** test
-- _enter the name of a **failing** test
+
+| test case                                                  | Result        | Remarks
+|------------------------------------------------------------|---------------|---
+test_with_in_range_for_min_minus_one                         | passing       | 
+test_with_in_range_for_max_plus_one                          | passing       | 
+test_with_in_range_for_min_plus_one                          | passing       | 
+test_with_in_range_for_max_minus_one                         | failing       |#Making test fail:Actual expected value=True
+test_getpreviousitem_for_empty_list                          | passing       | 
+test_getpreviousitem_for_one_element                         | passing       | 
+test_getpreviousitem_for_elemet_not_in_list                  | passing       |
+test_getpreviousitem_for_two_element                         | failing       |#Making test fail:Actual expected value=1
+test_get_ranges_list_for_empty_list                          | passing       |
+test_get_ranges_list_list_for_one_element                    | passing       |
+test_get_ranges_list_for_two_element                         | failing       |#Making test fail:Actual expected value=[[1,2]]
+test_get_ranges_list_for_multitple_element                   | passing       |
+test_range_list_to_range_dict_list_for_empty_list            | passing       |
+test_range_list_to_range_dict_list_for_list_with_one_range   | failing       |#Making test fail:Actual expected value=[{'lowerLimit': 1, 'upperLimit': 2, 'Count': 0}]
+test_range_list_to_range_dict_list_for_list_with_two_range   | passing       |
+test_ranges_with_most_often_occurences_log_for_none          | passing       |
+test_ranges_with_most_often_occurences_log_for_empty_list    | passing       |
+test_ranges_with_most_often_occurences_log_for_one_reading   | passing       |
+test_ranges_with_most_often_occurences_log_for_two_reading   | passing       |
+test_charging_current_log_for_multiple_reading               | passing       |
